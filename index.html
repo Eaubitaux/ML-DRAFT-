@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Legends Drafts</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Créateur de Drafts Mobile Legends</h1>
+        <p>Créez votre équipe idéale en sélectionnant des héros pour chaque rôle et découvrez les synergies de l'équipe.</p>
+    </header>
+
+    <section id="team-selection">
+        <h2>Sélectionnez vos héros pour chaque rôle</h2>
+        
+        <div class="role-selection">
+            <label for="hero1">Héros Jungle :</label>
+            <select id="hero1">
+                <option value="">-- Choisissez un héros --</option>
+            </select>
+        </div>
+
+        <div class="role-selection">
+            <label for="hero2">Héros EXP :</label>
+            <select id="hero2">
+                <option value="">-- Choisissez un héros --</option>
+            </select>
+        </div>
+
+        <div class="role-selection">
+            <label for="hero3">Héros Gold :</label>
+            <select id="hero3">
+                <option value="">-- Choisissez un héros --</option>
+            </select>
+        </div>
+
+        <div class="role-selection">
+            <label for="hero4">Héros Roam :</label>
+            <select id="hero4">
+                <option value="">-- Choisissez un héros --</option>
+            </select>
+        </div>
+
+        <div class="role-selection">
+            <label for="hero5">Héros Mid :</label>
+            <select id="hero5">
+                <option value="">-- Choisissez un héros --</option>
+            </select>
+        </div>
+        
+        <button id="calculate">Calculer les Moyennes</button>
+    </section>
+
+    <section id="selected-heroes">
+        <h3>Héros Sélectionnés :</h3>
+        <p>Les héros sélectionnés s'afficheront ici avec leurs images :</p>
+        <div id="heroes-images"></div>
+    </section>
+
+    <section id="criteria-results">
+        <h3>Moyenne des critères d'équipe :</h3>
+        <table id="results-table">
+            <thead>
+                <tr>
+                    <th>Critère</th>
+                    <th>Moyenne</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les lignes seront ajoutées dynamiquement par JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Mobile Legends Draft Tool - Créé pour vous aider à construire la meilleure équipe !</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

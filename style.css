@@ -1,0 +1,165 @@
+/* Variables de couleurs inspirées par Mobile Legends */
+:root {
+    --background-color: #1a1a2e; /* Fond sombre */
+    --primary-color: #16213e; /* Bleu foncé pour les sections */
+    --secondary-color: #0f3460; /* Bleu plus clair pour les bordures */
+    --accent-color: #e94560; /* Rouge/rose pour les éléments de contraste */
+    --highlight-color: #f5c518; /* Jaune pour les mises en avant */
+    --text-color: #e0e0e0; /* Couleur du texte clair */
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--highlight-color);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* Conteneurs de sections */
+section {
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    padding: 20px;
+    width: 85%;
+    max-width: 1000px;
+    box-shadow: 0 8px 20px var(--shadow-color);
+    margin-bottom: 20px;
+}
+
+#team-selection {
+    background: linear-gradient(135deg, #1e2761, #1a1a2e);
+}
+
+#team-selection h2, #selected-heroes h2, #criteria-results h2 {
+    color: var(--highlight-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style des sélecteurs de rôle */
+.role-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 120px;
+    margin: 5px;
+}
+
+#roles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+select:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Galerie des héros sélectionnés */
+#heroes-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#heroes-images img {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px var(--shadow-color);
+    transition: transform 0.2s ease;
+    border: 3px solid var(--accent-color);
+}
+
+#heroes-images img:hover {
+    transform: scale(1.1);
+}
+
+/* Tableau des critères */
+#results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px var(--shadow-color);
+}
+
+#results-table th, #results-table td {
+    padding: 12px;
+    text-align: center;
+}
+
+#results-table th {
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#results-table td {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+#results-table tr:nth-child(even) td {
+    background-color: #1c2541;
+}
+
+/* Améliorations des boutons et labels */
+button, label {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+button {
+    background-color: var(--accent-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--highlight-color);
+}
